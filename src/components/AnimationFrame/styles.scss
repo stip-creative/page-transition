@@ -1,0 +1,14 @@
+.AnimationFrame {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+}

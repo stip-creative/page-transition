@@ -1,0 +1,24 @@
+.About {
+    min-width: 100vw;
+    overflow: hidden;
+    
+    background-color: #f7f9f8;
+
+    &__frame {
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+    &__title {
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+}

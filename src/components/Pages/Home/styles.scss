@@ -1,0 +1,41 @@
+.Home {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    background-color: #f7f9f8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+
+    &__title {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: -70px;
+        width: 100%;
+    }
+    
+    &__coordinates {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -22px;
+        width: 100%;
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+    
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+}

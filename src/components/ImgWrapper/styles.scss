@@ -1,0 +1,13 @@
+.ImgWrapper {
+    width: 100%;
+    overflow: hidden;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
