@@ -1,5 +1,5 @@
 import React, { FunctionComponent, RefObject, PropsWithChildren } from "react";
-import { useSpring, a, SpringHandle, config } from "react-spring";
+import { SpringHandle } from "react-spring";
 
 import './styles.scss';
 
@@ -10,25 +10,11 @@ interface IAnimationText {
 
 const AnimationText: FunctionComponent<PropsWithChildren<IAnimationText>> = ({ isRevertAnimation, children, animRef = undefined }) => {
 
-    const { translateY } = useSpring({
-        config: {
-            ...config.stiff,
-            friction: 40,
-        },
-        ref: animRef,
-        from: { translateY: isRevertAnimation ? 100 : 0 },
-        to: { translateY: isRevertAnimation ? 0 : 100 }
-    });
-
     return (
         <div className="AnimationText">
-            <a.div
-                style={{
-                    transform: translateY.interpolate((translateY) => `translateY(${translateY}%)`)
-                }}
-            >
+            <div>
                 { children }
-            </a.div>
+            </div>
         </div>
     );
 };

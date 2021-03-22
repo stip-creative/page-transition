@@ -1,35 +1,32 @@
-import React, { FunctionComponent, RefObject, useRef } from "react";
-import { SpringHandle, useChain } from "react-spring";
+import React, { FunctionComponent } from "react";
 
-import AnimationFrame from "../../AnimationFrame";
-import AnimationText from "../../AnimationText";
 import ImgWrapper from "../../ImgWrapper";
 
 import './styles.scss';
 
-const About: FunctionComponent = () => {
-    const textRef: RefObject<SpringHandle> = useRef(null);
-    const photoRef: RefObject<SpringHandle>  = useRef(null);
-
-    useChain([textRef]);
-    
+const About: FunctionComponent = () => {    
     return (
         <div className="About" >
             <div className="About__frame">
                 <div className="About__title">
-                    <AnimationText 
-                        isRevertAnimation={true}
-                        animRef={textRef}
-                    >
+                    <div>
                         <h2 className="title">hawaii</h2>
-                    </AnimationText>
+                    </div>
                 </div>
-                <AnimationFrame 
-                    isRevertAnimation={true}
-                    animRef={photoRef}
+                <div
+                    style={{
+                        height: 'auto',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        flexWrap: 'wrap',
+                        position: 'relative',
+                        width: '100%',
+                        transform: `translateY(50%)`
+                    }}
                 >
                     <ImgWrapper url="sea.jpg" />
-                </AnimationFrame>
+                </div>
             </div>
         </div>
     );

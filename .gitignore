@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+<<<<<<< HEAD
 .eslintcache
+=======
+>>>>>>> ec9ba95fbedc5148d0a3511876e5953efbb4e0f6
 
 # dependencies
 /node_modules
