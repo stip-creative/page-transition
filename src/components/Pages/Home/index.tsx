@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 
 import ImgWrapper from "../../ImgWrapper";
 import AnimationText from "../../AnimationText";
+import AnimationFrame from "../../AnimationFrame";
 
 import './styles.scss';
 
